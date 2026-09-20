@@ -1,0 +1,7 @@
+node_modules
+node_modules.incomplete
+packages/**/node_modules
+packages/**/node_modules.incomplete
+yarn-install.log
+yarn-focus.log
+vercel-deploy.log
