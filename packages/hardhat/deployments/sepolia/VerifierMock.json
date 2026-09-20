@@ -1,0 +1,270 @@
+{
+  "address": "0xf05ad18a9ec53071e3b10051c8112fd2340a660a",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "clearExpectedInputs",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "enforceExpectedInputs",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "expectedDepth",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "expectedNullifier",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "expectedRoot",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "expectedVote",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_nullifier",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_root",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_vote",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_depth",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setExpectedInputs",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_shouldVerify",
+          "type": "bool"
+        }
+      ],
+      "name": "setShouldVerify",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "shouldVerify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "_publicInputs",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "contractName": "VerifierMock",
+  "sourceName": "contracts/mocks/VerifierMock.sol",
+  "bytecode": "0x60806040525f805460ff19166001179055348015601a575f5ffd5b506103c4806100285f395ff3fe608060405234801561000f575f5ffd5b506004361061009b575f3560e01c806369d4becc1161006357806369d4becc146101325780636b1e4df714610153578063b506e4681461015c578063ea50d0e41461016d578063fc18690114610180575f5ffd5b8063098d4a571461009f5780630a79726a146100bb5780630c54fb06146100d757806353a8d786146100f95780635d5b685114610129575b5f5ffd5b6100a860045481565b6040519081526020015b60405180910390f35b5f546100c79060ff1681565b60405190151581526020016100b2565b6100f76100e536600461025d565b5f805460ff1916911515919091179055565b005b6100f7610107366004610283565b5f805461ff001916610100179055600193909355600291909155600355600455565b6100a860035481565b6100f75f805461ff0019168155600181905560028190556003819055600455565b6100a860015481565b5f546100c790610100900460ff1681565b6100c761017b3660046102b2565b610189565b6100a860025481565b5f805460ff1661019a57505f610255565b5f54610100900460ff1615610251576004821415806101d3575060015483835f8181106101c9576101c961037a565b9050602002013514155b806101f95750600254838360018181106101ef576101ef61037a565b9050602002013514155b8061021f5750600354838360028181106102155761021561037a565b9050602002013514155b8061024557506004548383600381811061023b5761023b61037a565b9050602002013514155b1561025157505f610255565b5060015b949350505050565b5f6020828403121561026d575f5ffd5b8135801515811461027c575f5ffd5b9392505050565b5f5f5f5f60808587031215610296575f5ffd5b5050823594602084013594506040840135936060013592509050565b5f5f5f5f604085870312156102c5575f5ffd5b843567ffffffffffffffff8111156102db575f5ffd5b8501601f810187136102eb575f5ffd5b803567ffffffffffffffff811115610301575f5ffd5b876020828401011115610312575f5ffd5b60209182019550935085013567ffffffffffffffff811115610332575f5ffd5b8501601f81018713610342575f5ffd5b803567ffffffffffffffff811115610358575f5ffd5b8760208260051b840101111561036c575f5ffd5b949793965060200194505050565b634e487b7160e01b5f52603260045260245ffdfea264697066735822122072372f434db3dc20834587dfe6d7dab20f8c046c43c15d25a22af09e4ca4379264736f6c634300081b0033",
+  "deployedBytecode": "0x608060405234801561000f575f5ffd5b506004361061009b575f3560e01c806369d4becc1161006357806369d4becc146101325780636b1e4df714610153578063b506e4681461015c578063ea50d0e41461016d578063fc18690114610180575f5ffd5b8063098d4a571461009f5780630a79726a146100bb5780630c54fb06146100d757806353a8d786146100f95780635d5b685114610129575b5f5ffd5b6100a860045481565b6040519081526020015b60405180910390f35b5f546100c79060ff1681565b60405190151581526020016100b2565b6100f76100e536600461025d565b5f805460ff1916911515919091179055565b005b6100f7610107366004610283565b5f805461ff001916610100179055600193909355600291909155600355600455565b6100a860035481565b6100f75f805461ff0019168155600181905560028190556003819055600455565b6100a860015481565b5f546100c790610100900460ff1681565b6100c761017b3660046102b2565b610189565b6100a860025481565b5f805460ff1661019a57505f610255565b5f54610100900460ff1615610251576004821415806101d3575060015483835f8181106101c9576101c961037a565b9050602002013514155b806101f95750600254838360018181106101ef576101ef61037a565b9050602002013514155b8061021f5750600354838360028181106102155761021561037a565b9050602002013514155b8061024557506004548383600381811061023b5761023b61037a565b9050602002013514155b1561025157505f610255565b5060015b949350505050565b5f6020828403121561026d575f5ffd5b8135801515811461027c575f5ffd5b9392505050565b5f5f5f5f60808587031215610296575f5ffd5b5050823594602084013594506040840135936060013592509050565b5f5f5f5f604085870312156102c5575f5ffd5b843567ffffffffffffffff8111156102db575f5ffd5b8501601f810187136102eb575f5ffd5b803567ffffffffffffffff811115610301575f5ffd5b876020828401011115610312575f5ffd5b60209182019550935085013567ffffffffffffffff811115610332575f5ffd5b8501601f81018713610342575f5ffd5b803567ffffffffffffffff811115610358575f5ffd5b8760208260051b840101111561036c575f5ffd5b949793965060200194505050565b634e487b7160e01b5f52603260045260245ffdfea264697066735822122072372f434db3dc20834587dfe6d7dab20f8c046c43c15d25a22af09e4ca4379264736f6c634300081b0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/mocks/VerifierMock.sol",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "evm": {
+    "gasEstimates": {
+      "creation": {
+        "codeDepositCost": "192800",
+        "executionCost": "24459",
+        "totalCost": "217259"
+      },
+      "external": {
+        "clearExpectedInputs()": "44378",
+        "enforceExpectedInputs()": "2363",
+        "expectedDepth()": "2284",
+        "expectedNullifier()": "2305",
+        "expectedRoot()": "2371",
+        "expectedVote()": "2372",
+        "setExpectedInputs(bytes32,bytes32,bytes32,bytes32)": "112984",
+        "setShouldVerify(bool)": "24524",
+        "shouldVerify()": "2331",
+        "verify(bytes,bytes32[])": "13708"
+      }
+    }
+  },
+  "metadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"clearExpectedInputs\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"enforceExpectedInputs\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"expectedDepth\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"expectedNullifier\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"expectedRoot\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"expectedVote\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_nullifier\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_root\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_vote\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_depth\",\"type\":\"bytes32\"}],\"name\":\"setExpectedInputs\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"_shouldVerify\",\"type\":\"bool\"}],\"name\":\"setShouldVerify\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"shouldVerify\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"},{\"internalType\":\"bytes32[]\",\"name\":\"_publicInputs\",\"type\":\"bytes32[]\"}],\"name\":\"verify\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project/contracts/mocks/VerifierMock.sol\":\"VerifierMock\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\"npm/@zk-kit/lean-imt.sol@2.0.1/:poseidon-solidity/=npm/poseidon-solidity@0.0.5/\",\"project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.7.0/\",\"project/:@zk-kit/lean-imt.sol/=npm/@zk-kit/lean-imt.sol@2.0.1/\"]},\"sources\":{\"project/contracts/Verifier.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity ^0.8.27;\\r\\n\\r\\ninterface IVerifier {\\r\\n    function verify(bytes calldata _proof, bytes32[] calldata _publicInputs) external view returns (bool);\\r\\n}\\r\\n\",\"keccak256\":\"0x81d95485ca9af56396e91ea547ee75a69afe65b067a27ef8a14ca3ecba6822d3\",\"license\":\"MIT\"},\"project/contracts/mocks/VerifierMock.sol\":{\"content\":\"//SPDX-License-Identifier: MIT\\r\\npragma solidity >=0.8.0 <0.9.0;\\r\\n\\r\\n/// Checkpoint 6 //////\\r\\nimport { IVerifier } from \\\"../Verifier.sol\\\";\\r\\n\\r\\ncontract VerifierMock is IVerifier {\\r\\n    bool public shouldVerify = true;\\r\\n\\r\\n    // Optional: enforce an exact public inputs set and order for tests\\r\\n    bool public enforceExpectedInputs;\\r\\n    bytes32 public expectedNullifier;\\r\\n    bytes32 public expectedRoot;\\r\\n    bytes32 public expectedVote;\\r\\n    bytes32 public expectedDepth;\\r\\n\\r\\n    function setShouldVerify(bool _shouldVerify) external {\\r\\n        shouldVerify = _shouldVerify;\\r\\n    }\\r\\n\\r\\n    function setExpectedInputs(bytes32 _nullifier, bytes32 _root, bytes32 _vote, bytes32 _depth) external {\\r\\n        enforceExpectedInputs = true;\\r\\n        expectedNullifier = _nullifier;\\r\\n        expectedRoot = _root;\\r\\n        expectedVote = _vote;\\r\\n        expectedDepth = _depth;\\r\\n    }\\r\\n\\r\\n    function clearExpectedInputs() external {\\r\\n        enforceExpectedInputs = false;\\r\\n        expectedNullifier = 0x0;\\r\\n        expectedRoot = 0x0;\\r\\n        expectedVote = 0x0;\\r\\n        expectedDepth = 0x0;\\r\\n    }\\r\\n\\r\\n    function verify(bytes calldata, bytes32[] calldata _publicInputs) external view returns (bool) {\\r\\n        if (!shouldVerify) {\\r\\n            return false;\\r\\n        }\\r\\n        if (enforceExpectedInputs) {\\r\\n            if (\\r\\n                _publicInputs.length != 4 ||\\r\\n                _publicInputs[0] != expectedNullifier ||\\r\\n                _publicInputs[1] != expectedRoot ||\\r\\n                _publicInputs[2] != expectedVote ||\\r\\n                _publicInputs[3] != expectedDepth\\r\\n            ) {\\r\\n                return false;\\r\\n            }\\r\\n        }\\r\\n        return true;\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x9b8d412c7e94b8825d97b2eb355bf4bf365ccd1852fb2ac248957ef11e22fe4d\",\"license\":\"MIT\"}},\"version\":1}",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1632,
+        "contract": "project/contracts/mocks/VerifierMock.sol:VerifierMock",
+        "label": "shouldVerify",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 1634,
+        "contract": "project/contracts/mocks/VerifierMock.sol:VerifierMock",
+        "label": "enforceExpectedInputs",
+        "offset": 1,
+        "slot": "0",
+        "type": "t_bool"
+      },
+      {
+        "astId": 1636,
+        "contract": "project/contracts/mocks/VerifierMock.sol:VerifierMock",
+        "label": "expectedNullifier",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 1638,
+        "contract": "project/contracts/mocks/VerifierMock.sol:VerifierMock",
+        "label": "expectedRoot",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 1640,
+        "contract": "project/contracts/mocks/VerifierMock.sol:VerifierMock",
+        "label": "expectedVote",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 1642,
+        "contract": "project/contracts/mocks/VerifierMock.sol:VerifierMock",
+        "label": "expectedDepth",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_bytes32"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      }
+    }
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "argsData": "0x",
+  "transaction": {
+    "hash": "0x211dcdd1902cc82c3062f9dde36f7b3b3769863fdbcf549eab95dc992ef31147",
+    "nonce": "0x2",
+    "origin": "0xc87e9e080329c4468b7db7f57c5af568e5aea51b"
+  },
+  "receipt": {
+    "blockHash": "0x5aa6fc9df124747bdc89836ec8f292b5cdf039784f6bc78b0ad59d2730b3d75d",
+    "blockNumber": "0xb32a4c",
+    "transactionIndex": "0x4e"
+  }
+}
